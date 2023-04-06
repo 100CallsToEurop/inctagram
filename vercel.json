@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "inctagram",
+  "builds": [
+             { "src": "apps/api/main.ts", "use": "@vercel/node" }, 
+             { "src": "apps/auth/main.ts", "use": "@vercel/node" }, 
+             { "src": "apps/notification/main.ts", "use": "@vercel/node" }, 
+             { "src": "apps/read/main.ts", "use": "@vercel/node" }, 
+             { "src": "apps/users/main.ts", "use": "@vercel/node" }
+            ],
+  "routes": [
+             { "src": "/(.*)", "dest": "apps/api/src/main.ts" }, 
+             { "src": "/(.*)", "dest": "apps/auth/src/main.ts" }, 
+             { "src": "/(.*)", "dest": "apps/notification/src/main.ts" }, 
+             { "src": "/(.*)", "dest": "apps/read/src/main.ts" }, 
+             { "src": "/(.*)", "dest": "apps/users/src/main.ts" }
+            ]
+}

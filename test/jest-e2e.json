@@ -1,0 +1,24 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": "./e2e",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^@app/shared(|/.*)$": "<rootDir>../../../libs/shared/src/$1",
+    "@providers/providers/(.*)": "<rootDir>/../libs/providers/src/$1",
+    "@providers/providers": "<rootDir>/../libs/providers/src",
+    "@amqp-contracts/amqp-contracts/(.*)": "<rootDir>/../libs/amqp-contracts/src/$1",
+    "@amqp-contracts/amqp-contracts": "<rootDir>/../libs/amqp-contracts/src"
+  },
+  "forceExit": true,
+  "maxConcurrency": 1,
+  "detectOpenHandles": true,
+  "testTimeout": 60000
+}

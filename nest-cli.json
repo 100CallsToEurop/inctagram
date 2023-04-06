@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/users/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/users/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/users",
+  "projects": {
+    "users": {
+      "type": "application",
+      "root": "apps/users",
+      "entryFile": "main",
+      "sourceRoot": "apps/users/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/users/tsconfig.app.json"
+      }
+    },
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    },
+    "auth": {
+      "type": "application",
+      "root": "apps/auth",
+      "entryFile": "main",
+      "sourceRoot": "apps/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/auth/tsconfig.app.json"
+      }
+    },
+    "notification": {
+      "type": "application",
+      "root": "apps/notification",
+      "entryFile": "main",
+      "sourceRoot": "apps/notification/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/notification/tsconfig.app.json"
+      }
+    },
+    "contracts": {
+      "type": "library",
+      "root": "libs/contracts",
+      "entryFile": "index",
+      "sourceRoot": "libs/contracts/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/contracts/tsconfig.lib.json"
+      }
+    },
+    "guards": {
+      "type": "library",
+      "root": "libs/guards",
+      "entryFile": "index",
+      "sourceRoot": "libs/guards/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/guards/tsconfig.lib.json"
+      }
+    },
+    "decorators": {
+      "type": "library",
+      "root": "libs/decorators",
+      "entryFile": "index",
+      "sourceRoot": "libs/decorators/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/decorators/tsconfig.lib.json"
+      }
+    },
+    "interfaces": {
+      "type": "library",
+      "root": "libs/interfaces",
+      "entryFile": "index",
+      "sourceRoot": "libs/interfaces/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/interfaces/tsconfig.lib.json"
+      }
+    },
+    "classes": {
+      "type": "library",
+      "root": "libs/classes",
+      "entryFile": "index",
+      "sourceRoot": "libs/classes/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/classes/tsconfig.lib.json"
+      }
+    },
+    "utils": {
+      "type": "library",
+      "root": "libs/utils",
+      "entryFile": "index",
+      "sourceRoot": "libs/utils/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/utils/tsconfig.lib.json"
+      }
+    },
+    "errors": {
+      "type": "library",
+      "root": "libs/errors",
+      "entryFile": "index",
+      "sourceRoot": "libs/errors/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/errors/tsconfig.lib.json"
+      }
+    },
+    "filters": {
+      "type": "library",
+      "root": "libs/filters",
+      "entryFile": "index",
+      "sourceRoot": "libs/filters/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/filters/tsconfig.lib.json"
+      }
+    },
+    "read": {
+      "type": "application",
+      "root": "apps/read",
+      "entryFile": "main",
+      "sourceRoot": "apps/read/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/read/tsconfig.app.json"
+      }
+    },
+    "providers": {
+      "type": "library",
+      "root": "libs/providers",
+      "entryFile": "index",
+      "sourceRoot": "libs/providers/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/providers/tsconfig.lib.json"
+      }
+    },
+    "amqp-contracts": {
+      "type": "library",
+      "root": "libs/amqp-contracts",
+      "entryFile": "index",
+      "sourceRoot": "libs/amqp-contracts/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/amqp-contracts/tsconfig.lib.json"
+      }
+    }
+  }
+}

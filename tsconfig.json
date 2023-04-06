@@ -1,0 +1,83 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@lib/contracts": [
+        "libs/contracts/src"
+      ],
+      "@lib/contracts/*": [
+        "libs/contracts/src/*"
+      ],
+      "@guards/guards": [
+        "libs/guards/src"
+      ],
+      "@guards/guards/*": [
+        "libs/guards/src/*"
+      ],
+      "@decorators/decorators": [
+        "libs/decorators/src"
+      ],
+      "@decorators/decorators/*": [
+        "libs/decorators/src/*"
+      ],
+      "@interfaces/interfaces": [
+        "libs/interfaces/src"
+      ],
+      "@interfaces/interfaces/*": [
+        "libs/interfaces/src/*"
+      ],
+      "@classes/classes": [
+        "libs/classes/src"
+      ],
+      "@classes/classes/*": [
+        "libs/classes/src/*"
+      ],
+      "@utils/utils": [
+        "libs/utils/src"
+      ],
+      "@utils/utils/*": [
+        "libs/utils/src/*"
+      ],
+      "@errors/errors": [
+        "libs/errors/src"
+      ],
+      "@errors/errors/*": [
+        "libs/errors/src/*"
+      ],
+      "@filters/filters": [
+        "libs/filters/src"
+      ],
+      "@filters/filters/*": [
+        "libs/filters/src/*"
+      ],
+      "@providers/providers": [
+        "libs/providers/src"
+      ],
+      "@providers/providers/*": [
+        "libs/providers/src/*"
+      ],
+      "@amqp-contracts/amqp-contracts": [
+        "libs/amqp-contracts/src"
+      ],
+      "@amqp-contracts/amqp-contracts/*": [
+        "libs/amqp-contracts/src/*"
+      ]
+    }
+  }
+}
