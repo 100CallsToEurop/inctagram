@@ -2,17 +2,17 @@
   "version": 2,
   "name": "inctagram",
   "builds": [
-             { "src": "apps/api/main.ts", "use": "@vercel/node" }, 
-             { "src": "apps/auth/main.ts", "use": "@vercel/node" }, 
-             { "src": "apps/notification/main.ts", "use": "@vercel/node" }, 
-             { "src": "apps/read/main.ts", "use": "@vercel/node" }, 
-             { "src": "apps/users/main.ts", "use": "@vercel/node" }
+             { "src": "api/main.ts", "use": "@vercel/node" }, 
+             { "src": "auth/main.ts", "use": "@vercel/node" }, 
+             { "src": "notification/main.ts", "use": "@vercel/node" }, 
+             { "src": "read/main.ts", "use": "@vercel/node" }, 
+             { "src": "users/main.ts", "use": "@vercel/node" }
             ],
   "routes": [
-             { "src": "/(.*)", "dest": "apps/api/src/main.ts" }, 
-             { "src": "/(.*)", "dest": "apps/auth/src/main.ts" }, 
-             { "src": "/(.*)", "dest": "apps/notification/src/main.ts" }, 
-             { "src": "/(.*)", "dest": "apps/read/src/main.ts" }, 
-             { "src": "/(.*)", "dest": "apps/users/src/main.ts" }
+             { "src": "/(.*)", "dest": "api/src/main.ts" }, 
+             { "src": "/(.*)", "dest": "auth/src/main.ts" }, 
+             { "src": "/(.*)", "dest": "notification/src/main.ts" }, 
+             { "src": "/(.*)", "dest": "read/src/main.ts" }, 
+             { "src": "/(.*)", "dest": "users/src/main.ts" }
             ]
 }
